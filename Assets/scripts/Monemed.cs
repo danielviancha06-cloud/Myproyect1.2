@@ -10,10 +10,12 @@ public class Monemed : MonoBehaviour
     {
 
         //transform.Translate(Vector3.right * spped * Time.deltaTime);
-        // transform.position = Vector3.MoveTowards(transform.position, targed.transform.position, spped * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, targed.transform.position, spped * Time.deltaTime);
         transform.Rotate(Vector3.forward * spped * Time.deltaTime);
 
-        // transform.Rotate(Quaternion.RotateTowards(transform.rotation, targed.transform.rotation, spped * Time.deltaTime);
+        //transform.Rotate(Quaternion.RotateTowards(transform.rotation, targed.transform.rotation, spped * Time.deltaTime);
+
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, targed.transform.rotation, spped * Time.deltaTime);
 
     }
 

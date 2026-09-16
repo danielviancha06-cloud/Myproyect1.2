@@ -12,7 +12,7 @@ public class trampa : MonoBehaviour
     {
 
         //transform.Translate(Vector3.right * spped * Time.deltaTime);
-        
+
         transform.Rotate(-Vector3.forward * spped * Time.deltaTime);
     }
 }

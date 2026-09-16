@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     private InputAction inputAction;
     private InputAction moveAction;
     public Rigidbody2D Rigidbody2D;
-    public CharacterController CharacterController;
+    //public CharacterController CharacterController;
 
 
     [SerializeField] private Vector2 move;
@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Awake()
     {
-        CharacterController = GetComponent<CharacterController>();
+        //CharacterController = GetComponent<CharacterController>();
 
         Rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -51,7 +51,7 @@ public class PlayerControl : MonoBehaviour
     {
         Vector3 direction = new Vector3(move.x, 0, 0);
         transform.position += direction * speed * Time.deltaTime;
-        // Rigidbody2D.AddForce(move.normalized * speed, ForceMode2D.Force);
+        Rigidbody2D.AddForce(move.normalized * speed, ForceMode2D.Force);
         //CharacterController.SimpleMove(direction.normalized * speed);
 
     }
